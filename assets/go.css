@@ -1,0 +1,23 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#000;color:#fff;font:15px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh;display:grid;place-items:center;padding:24px 16px}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit}
+.go{width:100%;max-width:360px;text-align:center;display:flex;flex-direction:column;align-items:center;animation:fade .6s ease both}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.go-photo{width:112px;height:112px;border-radius:50%;object-fit:cover;padding:4px;border:1px solid #fff}
+.go-from{color:#a8a8a8;font-size:13px;margin-top:18px}
+.go-from strong{color:#fff;font-weight:600}
+h1{font-size:28px;font-weight:600;letter-spacing:-.01em;margin-top:6px}
+.go-label{color:#a8a8a8;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-top:26px}
+.go-code{margin-top:8px;width:100%;border:1px dashed #fff;border-radius:14px;padding:16px;font-size:26px;font-weight:700;letter-spacing:.1em;display:flex;flex-direction:column;gap:4px;transition:background .2s,color .2s}
+.go-code span{font-size:12px;font-weight:400;letter-spacing:0;color:#a8a8a8}
+.go-code:hover{background:#fff;color:#000}
+.go-code:hover span{color:#555}
+.go-status{display:flex;align-items:center;justify-content:center;gap:10px;color:#a8a8a8;font-size:14px;margin-top:26px}
+.spin{width:16px;height:16px;border:2px solid #333;border-top-color:#fff;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.go-btn{display:block;width:100%;margin-top:14px;padding:13px;border-radius:10px;background:#fff;color:#000;font-weight:600;text-decoration:none}
+.go-back{margin-top:22px;color:#a8a8a8;font-size:13px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:#fff;color:#000;font-weight:600;font-size:14px;padding:10px 18px;border-radius:999px;opacity:0;pointer-events:none;transition:opacity .25s,transform .25s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
